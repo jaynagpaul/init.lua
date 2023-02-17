@@ -1,0 +1,5 @@
+local vim = vim
+
+-- FOLD Settings
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

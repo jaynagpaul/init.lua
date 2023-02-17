@@ -1,3 +1,5 @@
+local vim = vim -- For LSP diagnostic purposes
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -12,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- PLUGINS
-plugins = {
+local plugins = {
 	{"savq/melange-nvim", lazy = false, priority = 1000},
 
 	{"nvim-telescope/telescope.nvim", tag = '0.1.1',
