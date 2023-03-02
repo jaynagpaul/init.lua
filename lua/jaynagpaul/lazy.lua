@@ -21,6 +21,7 @@ local plugins = {
 		dependencies = {"nvim-lua/plenary.nvim",}},
 
 	{"nvim-treesitter/nvim-treesitter", build=":TSUpdate"},
+	{"github/copilot.vim" },
 
 	{"VonHeikemen/lsp-zero.nvim", branch = "v1.x",
 		dependencies = {
